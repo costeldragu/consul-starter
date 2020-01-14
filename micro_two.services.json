@@ -1,0 +1,10 @@
+{
+  "service":     {
+    "name": "microservice-two",
+    "port": 8086,
+    "check": {
+      "http": "http://localhost:8086/health",
+      "interval": "10s"
+    }
+  }
+}

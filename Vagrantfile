@@ -18,4 +18,10 @@ Vagrant.configure("2") do |config|
         web.vm.network "private_network", ip: "172.20.20.2#{i}"
     end
   end
+
+  config.vm.define "wiremock" do |wiremock|
+      wiremock.vm.hostname = "wiremock"
+      wiremock.vm.network "private_network", ip: "172.20.20.20"
+    end
+
 end
